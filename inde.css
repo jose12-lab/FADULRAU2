@@ -1,0 +1,96 @@
+body, html {
+     margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow: hidden;
+
+    
+    background-image: url('refaccionaria.jpg');
+    background-size: cover;              /* Mantiene el aspecto */
+    background-position: center center;  /* Centrado */
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.form {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin: 200px auto;
+    max-width: 400px;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+.btn {
+    background-color: blue;
+    margin: 10px auto;
+    padding: 15px 40px;
+    border-radius: 20px;
+    color: white; /* Añadido para mejor contraste */
+    border: none; /* Elimina el borde por defecto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+   
+}
+
+.caja label {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color:black; /* Color de texto más legible */
+}
+
+.caja input {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 250px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Borde sutil */
+    padding: 8px; /* Mejor experiencia de usuario */
+}
+
+/* Media query corregida (max-width en lugar de max-with) */
+@media screen and (max-width: 600px) {
+    .form {
+        margin: 250px  auto; /* Ajusta el margen superior para móviles */
+        padding: 20px; /* Menos padding en pantallas pequeñas */
+        width: 350px;
+    }
+    
+    .caja input {
+        width: 80%; /* Inputs más anchos en móviles */
+    }
+}
+
+@media screen and (max-width: 410px){
+
+.form{
+
+width: 300px;
+margin:150px  auto;
+
+}
+
+.form input{
+
+    height: 20px;
+
+}
+.form label
+{
+
+
+}
+
+
+
+}
